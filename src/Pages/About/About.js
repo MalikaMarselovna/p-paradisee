@@ -2,8 +2,8 @@ import "./About.css";
 
 function About() {
   return (
-    <div className=" ">
-      <h1 className="text-5xl font-bold mb-4 flex justify-center text-[#f92e9e]">
+    <div className="w-[100%] ">
+      <h1 className="text-5xl font-bold mb-4 mt-10 flex justify-center text-[#f92e9e] ">
         Welcome to Plush Paradise!
       </h1>
       <div className="p-5 flex flex-col items-center justify-center">

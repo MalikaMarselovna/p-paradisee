@@ -43,12 +43,12 @@ function Navbar() {
         {/* right div */}
         <div className="right flex flex-1 items-center justify-end">
           <Auth className={style} />
-          <button>
+          {/* <button>
             <FavoriteBorderOutlined
               className="ml-3 text-[#f92e9e] hover:text-[#16ffbd] ease-in duration-600"
               style={{ fontSize: "35px" }}
             />
-          </button>
+          </button> */}
           <CartLink className={style} />
         </div>
       </div>

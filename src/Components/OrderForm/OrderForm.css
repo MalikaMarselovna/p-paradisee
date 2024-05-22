@@ -1,4 +1,4 @@
-.OrderForm {
+.OrderForm { 
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -7,7 +7,6 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.521);
   z-index: 1000;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,8 +20,10 @@
   pointer-events: all
 }
 .popup {
-  padding: 20px 50px;
+  padding: 50px 80px;
   background-color: white;
+  border: 2px solid #fd3cb6 ;
+  border-radius: 10px;
 }
 
 .popup form {
@@ -36,7 +37,8 @@
   font-size: 20px;
   border: none;
   padding-left: 10px;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: 1px solid rgba(133, 132, 133, 0.3); 
+  border-radius: 5px;
 }
 .popup form label{
   margin-bottom: 10px;
@@ -45,4 +47,5 @@
   margin-top: 15px;
   display: block;
   text-align: center;
+
 }

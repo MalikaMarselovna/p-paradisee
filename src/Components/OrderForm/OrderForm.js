@@ -40,18 +40,18 @@ export default function OrderForm({ active, setActive }) {
     <div className={active ? "OrderForm active" : "OrderForm"} onClick={() => setActive(false)}>
       <div className="popup" onClick={e => e.stopPropagation()}>
         <div className="popup-body">
-          <form onSubmit={onFormSubmit} id="window">
+          <form onSubmit={onFormSubmit} id="window" className="">
             <label>
-              <input type="text" name="name" placeholder="Name" required />
+              <input className="focus-within:border-[#f92e9e] outline-none" type="text" name="name" placeholder="Name" required />
             </label>
             <label>
-              <input type="tel" name="phone" placeholder="Phone" required />
+              <input className="focus-within:border-[#f92e9e] outline-none"  type="tel" name="phone" placeholder="Phone" required />
             </label>
             <label>
-              <input type="text" name="address" placeholder="Country, city, street" required />
+              <input className="focus-within:border-[#f92e9e] outline-none"  type="text" name="address" placeholder="Country, city, street" required />
             </label>
             <div>
-              <button type="submit" className="btn">Submit</button>
+              <button  type="submit" className="btn">Submit</button>
             </div>
           </form>
         </div>

@@ -26,7 +26,7 @@ export default function CartList() {
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
-      <div className="cartItem" key={product.id}>
+      <div className="cartItem flex justify-between items-center" key={product.id}>
         <Link to={"/products/" + product.slug}>
           <img src={product.picture} alt={product.name} />
         </Link>

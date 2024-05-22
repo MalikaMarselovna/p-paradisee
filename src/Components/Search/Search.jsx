@@ -46,7 +46,7 @@ export default function Search() {
     <div className="Search" ref={searchRef}>
       <input
         type="text"
-        placeholder="Search for a insturments"
+        placeholder="What are you looking for"
         value={searchTerm}
         onChange={handleSearch}
       />
