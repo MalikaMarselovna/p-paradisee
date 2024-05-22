@@ -51,7 +51,7 @@ export default function OrderForm({ active, setActive }) {
               <input className="focus-within:border-[#f92e9e] outline-none"  type="text" name="address" placeholder="Country, city, street" required />
             </label>
             <div>
-              <button  type="submit" className="btn">Submit</button>
+              <button  type="submit" className="btn">Order</button>
             </div>
           </form>
         </div>
