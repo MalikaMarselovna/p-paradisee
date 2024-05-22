@@ -28,11 +28,11 @@ export default function CartList() {
     .map((product) => (
       <div className="cartItem flex justify-between items-center" key={product.id}>
         <Link to={"/products/" + product.slug}>
-          <img src={product.picture} alt={product.name} />
+          <img src={product.picture} alt={product.name} className="mr-20" />
         </Link>
         <Link to={"/products/" + product.slug}>{product.name}</Link>
 
-        <div className="inputs mr-10 w-[400px]">
+        <div className="inputs ml-20 mr-10 w-[400px]">
           <div className="shadow-md mr-10 flex">
             <button
               onClick={() => onQuantityChange(product, cart[product.id] - 1)}
