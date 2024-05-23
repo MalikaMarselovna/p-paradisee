@@ -14,9 +14,19 @@
 }
 .Cart_ic:hover,
 .Sign-in_ic:hover,
-.Sign-out_ic:hover{
-
+.Sign-out_ic:hover
+.Delate_ic:hover{
   transform: translate(0, -3px);
+}
+.Delate_ic{
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: url(../../img/delate.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 20px;
+  transition: 0.5s;
 }
 .Cart_ic span{
   position: absolute;

@@ -1,0 +1,13 @@
+.Cart {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .Cart .flex-grow {
+    flex-grow: 1;
+  }
+  
+  .Cart .w-250px {
+    min-width: 250px;
+  }
+  

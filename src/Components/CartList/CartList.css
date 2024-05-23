@@ -7,19 +7,23 @@
   justify-content: space-between;
   margin-bottom: 10px;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
   width: 100%;
-  padding: 10px 0;
-  border-bottom: 1px solid rgb(244, 42, 173);
+  padding: 0;
+  border: 2px solid rgb(244, 42, 173);
   font-size: 28px;
   height: 100%;
+  transition: 0.5s;
+}
+.CartList .cartItem:hover{
+  background: #f4f3f3;
 }
 .cartItem img {
-  max-width: 150px;
-  border-radius: 5px;
+  max-width: 160px;
+  border-radius: 5px 0 0 5px;
   overflow: hidden;
   transition: all 100ms linear;
-  border: 1px solid rgb(244, 42, 173);
+  height: 100%;
 }
 .cartItem input {
   width: 30px;

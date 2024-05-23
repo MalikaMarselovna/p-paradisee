@@ -1,0 +1,27 @@
+.CartSidebar {
+  min-width: 250px;
+
+}
+
+.CartSidebar h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.CartSidebar p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.order.btn {
+  background-color: #f92e9e;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.order.btn:hover {
+  background-color: #d92586;
+}

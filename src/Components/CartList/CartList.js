@@ -26,7 +26,7 @@ export default function CartList() {
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
-      <div className="cartItem flex justify-between items-center" key={product.id}>
+      <div className="cartItem flex justify-between items-center text-center" key={product.id}>
         <Link to={"/products/" + product.slug}>
           <img src={product.picture} alt={product.name} className="mr-20" />
         </Link>
@@ -57,15 +57,17 @@ export default function CartList() {
               +
             </button>
           </div>
-          <span>${(cart[product.id] * product.price).toFixed(2)}</span>
-          <i
-            className="fa-solid fa-xmark cursor-pointer text-[#f92e9e]"
+          <span className="ml-4">${(cart[product.id] * product.price).toFixed(2)}</span>
+          <button
+            className="Delate_ic cursor-pointer"
             onClick={() => onItemRemove(product)}
-          />
+          >
+          </button>
         </div>
       </div>
     ));
 
   return <div className="CartList">{output}</div>;
 }
+
 
