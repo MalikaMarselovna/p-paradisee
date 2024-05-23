@@ -1,4 +1,4 @@
- /* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
 html,body{
 	height: 100%;
 }
@@ -86,7 +86,7 @@ body{
 .img_wrap{
 	overflow: hidden;
 	border-radius: 5px;
-}   */ 
+}   */
 
 /* index.css */
 
@@ -97,14 +97,31 @@ body{
 @layer components {
   .easy-in {
     /* Define the styles for the custom class */
-    transition-timing-function: ease-in ;
+    transition-timing-function: ease-in;
   }
 }
 
 /* Your existing styles */
-.btn {
-  @apply text-white bg-[#f92e9e] rounded-md shadow-md p-3 hover:scale-[1.1] easy-in duration-100 cursor-pointer hover:bg-[#16ffbd] ease-in cursor-pointer  pl-5 pr-5 pt-2 pb-2}
-.card, a, div{
-  transition: 1s
+/* .btn {
+  @apply text-white bg-[#f92e9e] rounded-md shadow-md p-3 hover:scale-[1.1] easy-in duration-100 cursor-pointer hover:bg-[#16ffbd] ease-in cursor-pointer  pl-5 pr-5 pt-2 pb-2} */
+.card,
+a,
+div {
+  transition: 1s;
 }
 @tailwind utilities;
+
+.btn {
+	font-size: 18px;
+  border-radius: 5px;
+  color: #fdfbfb;
+  padding: 5px 15px;
+  background: #f92e9e;
+  box-shadow: 0 3px 10px 0 rgb(212, 44, 173);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 20px 40px 0 rgb(212, 44, 173);
+}
