@@ -10,10 +10,13 @@
   background-size: cover;
   position: relative;
   margin-left: 20px;
-  transition: 1s;
+  transition: 0.5s;
 }
-.Cart_ic:hover{
-  transform: scale(1.1);
+.Cart_ic:hover,
+.Sign-in_ic:hover,
+.Sign-out_ic:hover{
+
+  transform: translate(0, -3px);
 }
 .Cart_ic span{
   position: absolute;
@@ -29,6 +32,7 @@
   right: -5px;
   border-radius: 100%;
   border: #fff 2px solid;
+
 }
 .Favorite_ic{
   width: 34px;
@@ -38,4 +42,25 @@
   background-size: cover;
   position: relative;
   margin-left: 20px;
+}
+.Sign-in_ic{
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: url(../../img/sign-in.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 20px;
+  transition: 0.5s;
+
+}
+.Sign-out_ic{
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: url(../../img/sign-out.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-left: 20px;
+  transition: 0.5s;
 }
