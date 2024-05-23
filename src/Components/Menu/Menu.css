@@ -1,12 +1,41 @@
+
+.Menu {
+  padding: 10px 16px;
+  background: #f92e9e;
+  color: #f1f1f1;
+  z-index: 1000;
+}
+
+/* Содержимое страницы */
+.content {
+  padding: 16px;
+}
+
+/* Класс "sticky" добавляется в заголовок с помощью JS, когда он достигает своей прокрутки позиция */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Добавить некоторые верхние отступы к содержимому страницы для предотвращения внезапного быстрого перемещения (поскольку заголовок получает новую позицию в верхней части страницы (позиция: фиксированная и верхняя: 0 */
+.sticky + .content {
+  padding-top: 102px;
+}
 .Menu li {
-  padding: 3px 10px;
+  padding: 5px 15px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.5s;
   border-bottom: 2px solid transparent;
   color: #fff;
+  border-radius: 5px;
 }
 .Menu li:hover {
-  color: aquamarine;
+  transform: translate(0, -2px);
+  box-shadow: 0 20px 40px 0 rgb(242, 239, 241);
+  color: #f92e9e;
+  border: #fdfbfb;
+  background: #fdfbfb;
 }
 .Foot_menu {
   width: 100%;
