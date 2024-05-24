@@ -52,3 +52,8 @@ footer .Menu li {
   padding: 3px 0 1px;
   text-transform: none;
 }
+.menu-list{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}

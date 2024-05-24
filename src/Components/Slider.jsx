@@ -8,7 +8,7 @@ function Slider() {
   const [slides] = useState(ApiSlides);
   const [activeSlide, setActiveSlide] = useState(0);
 
-  const arrowStyle = "rounded-full m-3 text-white bg-[#f92e9e] hover:bg-[#16ffbd] flex shadow-sm items-center justify-center cursor-pointer";
+  const arrowStyle = "Arrows rounded-full m-3 text-white bg-[#f92e9e]  flex shadow-sm items-center justify-center cursor-pointer";
 
   const nextSlide = () => {
     setActiveSlide(activeSlide === slides.length - 1 ? 0 : activeSlide + 1);

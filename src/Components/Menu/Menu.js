@@ -26,38 +26,41 @@ function Menu() {
   }, []);
 
   return (
-    <nav ref={headerRef} id="myHeader" className="Menu w-[100%] p-3 bg-[#f92e9e]" aria-label="Main Menu">
+    <nav ref={headerRef} id="myHeader" className="Menu bg-[#f92e9e]">
+      <div className="container">
       <ul className="flex flex-1 items-center justify-around" role="none">
-        <li role="none">
-          <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>
-            Home
-          </Link>
-        </li>
-        <li role="none">
-          <Link to="/about" aria-current={location.pathname === "/about" ? "page" : undefined}>
-            About Us
-          </Link>
-        </li>
-        <li role="none">
-          <Link to="/categorypages" aria-current={location.pathname === "/categorypages" ? "page" : undefined}>
-            Our Products
-          </Link>
-        </li>
-        <li role="none">
-          <Link to="/delivery" aria-current={location.pathname === "/delivery" ? "page" : undefined}>
-            Delivery
-          </Link>
-        </li>
-        <li role="none">
-          <Link to="/contacts" aria-current={location.pathname === "/contacts" ? "page" : undefined}>
-            Contact Us
-          </Link>
-        </li>
-      </ul>
+          <li>
+            <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" aria-current={location.pathname === "/about" ? "page" : undefined}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/categorypages" aria-current={location.pathname === "/categorypages" ? "page" : undefined}>
+              Our Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/delivery" aria-current={location.pathname === "/delivery" ? "page" : undefined}>
+              Delivery
+            </Link>
+          </li>
+          <li>
+            <Link to="/contacts" aria-current={location.pathname === "/contacts" ? "page" : undefined}>
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
 
 export default Menu;
+
 
 
