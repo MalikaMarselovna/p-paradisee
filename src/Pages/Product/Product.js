@@ -30,7 +30,7 @@ export default function Product() {
   };
 
   return (
-    <div className="flex justify-center mb-10 mt-10">
+    <div className="flex justify-center mb-10 mt-10 p-5">
       <div>
         <img 
           src={product.picture} 
