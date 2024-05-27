@@ -35,7 +35,7 @@ function Slider() {
               <div className="des flex flex-col flex-1 place-items-start justify-center ml-11">
                 <h2 className="text-[55px] mr-[10px]"> {slide.content.h2} </h2>
                 <p className="text-[30px] mb-[20px]">{slide.content.p}</p>
-                <Link to="/" className="btn">Shop Now</Link>
+                <Link to="/categorypages" className="btn">Shop Now</Link>
               </div>
             </div>
           </div>
