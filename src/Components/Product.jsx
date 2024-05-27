@@ -16,14 +16,14 @@ function Product({ item }) {
 
   return (
     <div
-      className='flex flex-1 items-center justify-center min-w-[280px] min-h-[350px] overflow-hidden rounded-md shadow-lg m-2 relative'
+      className='prod-img flex flex-1 items-center justify-center min-w-[280px] min-h-[350px] overflow-hidden rounded-md shadow-lg m-2 relative hover:scale-[1.03]'
       onMouseEnter={handleHoverEnter}
       onMouseLeave={handleHoverExit}
     >
-      <img src={item.src} alt="product_image" className='w-[100%] h-[100%] overflow-hidden rounded-md' />
-      <div className={`flex items-center justify-center w-[100%] h-[100%] absolute ease-in duration-100${hoverEffect}`}>
+      <img src={item.src} alt="product_image" className=' w-[100%] h-[100%] overflow-hidden rounded-md' />
+      <div className={`flex items-center justify-center w-[100%] h-[100%] absolute ease-in duration-100`}>
         {/* icons */}
-        <div className={iconStyle}>
+        {/* <div className={iconStyle}>
           <ShoppingCartOutlined />
         </div>
         <div className={iconStyle}>
@@ -31,7 +31,7 @@ function Product({ item }) {
         </div>
         <div className={iconStyle}>
           <SearchOutlined />
-        </div>
+        </div> */}
       </div>
     </div>
   );

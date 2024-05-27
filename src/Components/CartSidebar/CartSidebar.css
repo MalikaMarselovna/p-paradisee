@@ -1,18 +1,16 @@
 .CartSidebar {
   min-width: 250px;
+  position: relative;
 
 }
 
-.CartSidebar h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+.sidebar-content{
+    position: sticky;
+    top: 80px;
+    left: 0;
+    right: 0;
 }
 
-.CartSidebar p {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
 
 .order.btn {
   background-color: #f92e9e;

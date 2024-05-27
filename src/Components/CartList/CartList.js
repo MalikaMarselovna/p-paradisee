@@ -7,7 +7,7 @@ export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
 
   const onQuantityChange = (product, qty) => {
-    if (qty >= 0 && qty <= 100) {
+    if (qty >= 1 && qty <= 100) {
       setCart({
         ...cart,
         [product.id]: qty,
@@ -28,9 +28,9 @@ export default function CartList() {
     .map((product) => (
       <div className="cartItem flex justify-between items-center text-center" key={product.id}>
         <Link to={"/products/" + product.slug}>
-          <img src={product.picture} alt={product.name} className="mr-20" />
+          <img src={product.picture} alt={product.name} />
         </Link>
-        <Link to={"/products/" + product.slug}>{product.name}</Link>
+        <Link className="tit" to={"/products/" + product.slug}>{product.name}</Link>
 
         <div className="inputs ml-20 mr-10 w-[400px]">
           <div className="shadow-md mr-10 flex">
@@ -41,11 +41,11 @@ export default function CartList() {
               -
             </button>
             <input
-              className="text-center flex items-center justify-center border-[1px] border-[#f92e9e] outline-none w-[120px]"
+              className="text-center flex items-center justify-center border-[1px] border-[#f92e9e] outline-none w-[60px]"
               name="num"
-              type="number"
+              type="text"
               value={cart[product.id]}
-              min={0}
+              min={1}
               onChange={(event) =>
                 onQuantityChange(product, parseInt(event.target.value, 10))
               }
@@ -57,9 +57,9 @@ export default function CartList() {
               +
             </button>
           </div>
-          <span className="ml-4">${(cart[product.id] * product.price).toFixed(2)}</span>
+          <span className="w-[150px]">${(cart[product.id] * product.price).toFixed(2)}</span>
           <button
-            className="Delate_ic cursor-pointer"
+            className="Delate_ic cursor-pointer "
             onClick={() => onItemRemove(product)}
           >
           </button>

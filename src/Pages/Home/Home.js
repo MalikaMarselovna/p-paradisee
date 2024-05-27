@@ -7,10 +7,11 @@ function Home() {
   return (
     <>
       <Slider />
+      <h2 className="mt-20 mb-10 text-4xl font-bold mb-4 flex justify-center text-[#f92e9e]">What we have for sale?</h2>
 
       <Categories />
 
-      <h1 className=" mt-10 mb-10 text-4xl font-bold mb-4 flex justify-center text-[#f92e9e]">
+      <h1 className=" mt-20 mb-10 text-4xl font-bold mb-4 flex justify-center text-[#f92e9e]">
         Our Cute Toys
       </h1>
       <Products />

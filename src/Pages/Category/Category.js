@@ -19,9 +19,9 @@ export default function Category() {
   }
 
   return (
-    <div className="Category">
+    <div className="Category ">
       <h2 className="title text-[40px] text-[#f92e9e] ">{category.name}</h2>
-      <ProductList category={category} />
+      <ProductList  category={category} />
     </div>
   )
 }

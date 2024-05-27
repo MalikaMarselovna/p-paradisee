@@ -15,11 +15,11 @@ function CartSidebar({ onOrder }) {
   const totalItems = Object.values(cart).reduce((sum, qty) => sum + qty, 0);
 
   return (
-    <div className="CartSidebar h-[100%] p-10 bg-gray-100 border-[2px] border-[#f92e9e] rounded-md">
+    <div className="CartSidebar h-[99%] pl-10 pr-5 border-[2px] border-none rounded-md ">
       <div className="sidebar-content ">
-        <h2 className="text-xl font-semibold mb-4">Cart Summary</h2>
-        <p>Total Items: {totalItems}</p>
-        <p>Total Price: ${totalPrice.toFixed(2)}</p>
+        <h2 className="text-4xl mb-4 text-[#f92e9e]">Cart Summary</h2>
+        <p className="text-[25px]">Total Items: {totalItems}</p>
+        <p className="text-[25px]"> Total Price: ${totalPrice.toFixed(2)}</p>
         <button className="btn mt-4 w-full text-center" onClick={onOrder}>
           Order and Checkout
         </button>

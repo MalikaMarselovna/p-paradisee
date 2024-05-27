@@ -1,0 +1,7 @@
+.social:hover{
+    box-shadow: 0 10px 30px 0 rgb(212, 44, 173);
+}
+.social{
+    transition: 0.5s;
+    box-shadow: 0 3px 10px 0 rgb(212, 44, 173);
+}

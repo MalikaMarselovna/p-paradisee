@@ -27,7 +27,7 @@ function Menu() {
 
   return (
     <nav ref={headerRef} id="myHeader" className="Menu bg-[#f92e9e]">
-      <div className="container">
+      <div className="container bg-[#]">
       <ul className="flex flex-1 items-center justify-around" role="none">
           <li>
             <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>

@@ -1,5 +1,5 @@
 import "./Delivery.css";
-import video from "../../img/delivery.mp4";
+import video from "../../img/deliver.mp4";
 
 function Delivery() {
   return (
@@ -20,18 +20,22 @@ function Delivery() {
           >
             <source src={video} type="video/mp4" />
           </video>
-          <div className=" p-5 flex flex-col justify-center text-center ">
-            <p className="text-gray-800 flex justify-center mb-4 text-[20px]">
-              We offer a wide range of shipping options to suit your needs. No
-              matter where you are, we can deliver your order anywhere in the
-              world.
+          <div className=" p-5  flex-col justify-start text-center">
+            <p className="text-gray mb-4 text-[33px]">
+              We offer several delivery options:
             </p>
-            <p className="text-gray-800 mb-4 flex justify-center text-[20px]">
-              We work with reliable delivery partners to ensure your order
-              arrived on time and safely.
+            <p className="text-gray-800 mb-4  text-[20px]">
+              courier delivery,
             </p>
-            <p className="text-gray-800 flex justify-center text-[20px]">
-              Contact us today to learn more about shipping options and cost.
+            <p className="text-gray-800  mb-4  text-[20px]">
+              postal delivery,
+            </p>
+            <p className="text-gray-800 mb-4   text-[20px]">
+              pickup from our store
+            </p>
+            <p className="text-gray mb-4  text-[20px]">
+              When placing an order, you can choose the method most convenient
+              for you.
             </p>
           </div>
         </div>

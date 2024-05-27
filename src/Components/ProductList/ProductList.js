@@ -11,7 +11,7 @@ export default function ProductList({ category }) {
   const output = products
     .filter((product) => product.category === category.id)
     .map((product) => (
-      <div key={product.id} className="product">
+      <div key={product.id} className="product hover:scale-[1.03]">
         <Link to={"/products/" + product.slug}>
           <img src={product.picture} alt={product.name} />
         </Link>

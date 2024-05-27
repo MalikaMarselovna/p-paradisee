@@ -1,0 +1,88 @@
+/* .Search {
+    background: none;
+    border-radius: 5px;
+    color: rgb(230, 76, 148);
+    line-height: 30px;
+    outline: none;
+    padding: 0;
+    width: 450px;
+    border: 2px solid rgb(224, 217, 217);
+    text-align: center;
+  } */
+  .searchInput:hover{
+    box-shadow: 0 5px 10px 0 rgb(201, 32, 162);
+}
+.searchInput{
+  transition: 0.5s;
+}
+  
+/* Search.css */
+
+.Search {
+  position: relative;
+}
+
+.searchInput {
+  position: relative;
+}
+
+.searchOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.SearchResults {
+  position: fixed;
+  top: 160px; /* Adjust based on your layout */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background-color: white;
+  z-index: 20;
+  max-height: 500px; /* Adjust based on your design */
+  overflow-y: auto;
+  padding: 10px 10px 0;
+  border-radius: 5px;
+}
+
+.NoResults {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background-color: white;
+  z-index: 20;
+  border: 2px solid #f92e9e;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+  .Search input::placeholder {
+    color: rgb(190, 190, 202);
+  }
+  @media screen and (max-width: 999px) {
+    .Search {
+      margin: 20px 5px;
+      width: 130px;
+    }
+    .Search .searcher {
+      margin: 6px 20px 0 0;
+    }
+  }
+  @media screen and (max-width: 789px) {
+    .Search {
+      width: 100px;
+      margin: 15px 30px;
+    }
+    .Search .SearchResults {
+      right: -25px;
+    }
+  }
