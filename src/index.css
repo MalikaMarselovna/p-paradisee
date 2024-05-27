@@ -109,7 +109,7 @@ body{
 .card,
 a,
 div {
-  transition: 1s;
+  transition: 0.5s;
 }
 @tailwind utilities;
 
