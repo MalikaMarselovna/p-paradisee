@@ -3,18 +3,24 @@ import { useContext } from 'react';
 import { AppContext } from '../App';
 import Category from './Category';
 import AddCategory from './AddCategory/AddCategory';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function Categories() {
   const { categories } = useContext(AppContext);
 
   return (
-    <div className="flex justify-between items-center p-5">
-      <ul className="flex">
+    <div className="p-5 items-center justify-center flex flex-col ">
+
+      <ul className="flex-wrap flex items-center justify-center">
         {categories.map((category) => (
           <Category category={category} key={category.id} />
         ))}
-        <AddCategory />
+        
       </ul>
+      <AddCategory />
+      
     </div>
   );
 }
