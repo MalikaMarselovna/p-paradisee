@@ -3,6 +3,7 @@ import NotFound from "../NotFound/NotFound";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import ProductList from "../../Components/ProductList/ProductList";
+import CategoryList from "../../Components/CategoryList/CategoryList";
 
 
 export default function Category() {
@@ -20,6 +21,7 @@ export default function Category() {
 
   return (
     <div className="Category ">
+      <CategoryList></CategoryList>
       <h2 className="title text-[40px] text-[#f92e9e] ">{category.name}</h2>
       <ProductList  category={category} />
     </div>

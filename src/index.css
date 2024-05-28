@@ -88,6 +88,7 @@ body::-webkit-scrollbar {
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @layer components {
   .easy-in {
@@ -107,7 +108,7 @@ a,
 div {
   transition: 0.5s;
 }
-@tailwind utilities;
+
 
 .btn {
   font-size: 18px;

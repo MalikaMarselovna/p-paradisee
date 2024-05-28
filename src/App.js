@@ -7,19 +7,26 @@ import Delivery from "./Pages/Delivery/Delivery";
 import Category from "./Pages/Category/Category";
 import NotFound from "./Pages/NotFound/NotFound";
 import { createContext, useEffect, useState } from "react";
-import { onAuthChange, onCategoriesLoad, onOrdersLoad, onProductsLoad } from "./firebase";
+import {
+  onAuthChange,
+  onCategoriesLoad,
+  onOrdersLoad,
+  onProductsLoad,
+} from "./firebase";
 import Product from "./Pages/Product/Product";
 import { Cart } from "./Pages/Cart/Cart";
 import ThankYou from "./Pages/ThankYou/ThankYou";
 import Orders from "./Pages/Orders/Orders";
 import CategoryPages from "./Pages/CategoryPages";
+import CategoryList from "./Components/CategoryList/CategoryList"
+import CategoryAll from "./Components/СategoryAll"
 
 export const AppContext = createContext({
   categories: [],
   products: [],
   orders: [],
   cart: {},
-  setCart: () => { },
+  setCart: () => {},
   user: null,
 });
 
@@ -42,20 +49,20 @@ function App() {
     onProductsLoad(setProducts);
     onOrdersLoad(setOrders);
 
-    onAuthChange(user => {
-      if(user) {
+    onAuthChange((user) => {
+      if (user) {
         user.isAdmin = user && user.email === "mmukashova1@gmail.com";
       }
 
       setUser(user);
-    })
+    });
   }, []);
-
-
 
   return (
     <div className="App">
-      <AppContext.Provider value={{ categories, products, cart, setCart, user, orders }} >
+      <AppContext.Provider
+        value={{ categories, products, cart, setCart, user, orders }}
+      >
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -68,6 +75,8 @@ function App() {
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/categorypages" element={<CategoryPages />} />
+            <Route path="/categories/all" element={<CategoryAll />} />
+            <Route path="/categories/:slug" element={<CategoryList />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
