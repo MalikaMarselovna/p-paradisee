@@ -13,17 +13,25 @@ export default function CategoryList() {
       <NavLink to={"/categories/" + category.slug}>
         {category.name}
       </NavLink>
-
       <DeleteCategory category={category} />
     </li>
-  ))
+  ));
 
   return (
-    <div className="CategoryList ">
-      <button className="dropdownBtn"><span>Categories </span><i className="fa-solid fa-chevron-down fa-xs"></i></button>
-      <ul className="dropdownContent">{output}
-      <AddCategory />
+    <div className="CategoryList container">
+      <button className="dropdownBtn">
+        <p><strong>Categories</strong></p>
+        <i className="fa-solid fa-chevron-down fa-xs"></i>
+      </button>
+      <ul className="dropdownContent">
+        <li>
+          <NavLink to="/categories/all">
+            Categories All
+          </NavLink>
+        </li>
+        {output}
+        <AddCategory />
       </ul>
     </div>
-  )
+  );
 }

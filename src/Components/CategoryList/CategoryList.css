@@ -1,4 +1,4 @@
-.CategoryList{
+/* .CategoryList{
     background: rgb(245, 245, 247);
     padding: 10px 0;
 }
@@ -11,5 +11,38 @@
     background: rgb(214, 214, 215);;
 }
 .dropdownBtn{
+    padding-bottom: 5px;
+} */
+.CategoryList {
+    background: #00000000;
+    padding: 10px 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: solid white;
+    max-height: 30vh;
+}
+
+.dropdownBtn {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.CategoryList a {
+    display: block;
+    padding: 3px 10px;
+    transition: 0.3s;
+}
+.CategoryList ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.CategoryList a:hover {
+  scale: 1.1;
+}
+
+.dropdownBtn {
     padding-bottom: 5px;
 }
