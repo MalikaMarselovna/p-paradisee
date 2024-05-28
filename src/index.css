@@ -99,13 +99,13 @@ body{
 /* .btn {
   @apply text-white bg-[#f92e9e] rounded-md shadow-md p-3 hover:scale-[1.1] easy-in duration-100 cursor-pointer hover:bg-[#16ffbd] ease-in cursor-pointer  pl-5 pr-5 pt-2 pb-2} */
 
-  /* .container{
+  .container{
 	max-width: 1325px;
 	width: 100%;
 	min-width: 320px;
 	margin: 0 auto;
 	padding: 0 15px;
-} */
+}
 .card,
 a,
 div {
