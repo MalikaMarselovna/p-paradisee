@@ -9,13 +9,13 @@ import Announce from "../Announce";
 export default function HeaderSection() {
   return (
     <header className="Header">
-      <div className="container">
+    
         <div className=" ">
           <Announce />
           <Navbar />
           <Menu />
         </div>
-      </div>
+    
     </header>
   );
 }
