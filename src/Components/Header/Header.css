@@ -14,9 +14,9 @@
 }
 .Cart_ic:hover,
 .Sign-in_ic:hover,
-.Sign-out_ic:hover
+.Sign-out_ic:hover,
 .Delate_ic:hover{
-  transform: translate(0, -3px);
+  transform:scale(1.1);
 }
 .Delate_ic{
   width: 40px;

@@ -109,7 +109,7 @@ function Footer() {
           </div>
         </div>
         <div className="p-5 bg-[#f92e9e]">
-          <p className="flex items-center justify-center text-[#16ffbd]">
+          <p className="flex items-center justify-center text-[#16ffbd] container">
             © 2024 Plush Paradise. All Rights Reserved.
           </p>
         </div>

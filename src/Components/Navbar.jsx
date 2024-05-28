@@ -17,7 +17,6 @@ function Navbar() {
 
   return (
     <div className="navbar shadow-md relative z-10">
-      
       <div className="wrapper pl-[20px] pr-[20px] pt-[10px] pb-[10px] flex justify-between items-center container">
         {/* logo */}
         <div className="center flex-1 text-center">

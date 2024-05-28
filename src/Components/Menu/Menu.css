@@ -24,20 +24,16 @@
 .sticky + .content {
   padding-top: 102px;
 }
-.Menu li {
+.Menu li{
   padding: 5px 15px;
   font-weight: 600;
   transition: 0.5s;
-  border-bottom: 2px solid transparent;
-  color: #fff;
-  border-radius: 5px;
+
+  color: #fff;;
 }
 .Menu li:hover {
-  transform: translate(0, -2px);
-  box-shadow: 0 20px 40px 0 rgb(242, 239, 241);
-  color: #f92e9e;
-  border: #fdfbfb;
-  background: #fdfbfb;
+  transform: scale(1.1);
+
 }
 .Foot_menu {
   width: 100%;

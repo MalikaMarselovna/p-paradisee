@@ -64,10 +64,11 @@ export default function Search() {
             value={searchTerm}
             onChange={handleSearch}
           />
-          <button type="button">
+        <button type="button">
             <SearchIc className="text-[#f92e9e]" style={{ fontSize: "22px" }} />
           </button>
         </div>
+          
       </div>
       {searchTerm && <div className="searchOverlay"></div>}
       {searchTerm && searchResults.length === 0 && (

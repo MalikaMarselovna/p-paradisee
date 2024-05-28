@@ -63,7 +63,9 @@
   text-align: center;
   padding: 10px;
 }
-
+.SearchResults::-webkit-scrollbar {
+  display: none;
+}
 
   .Search input::placeholder {
     color: rgb(190, 190, 202);
