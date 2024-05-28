@@ -29,14 +29,14 @@ function About() {
         <div className="w-[45%] flex items-center">
           <p className="text-gray-800 flex  justify-center mb-4 text-center text-[20px] ">
             In our store you will find the softest and cutest plush knitted toys
-            for you and your loved ones.🩷
+            for you and your loved ones.
             <br />
             <br></br>Each toy is carefully crafted by our experienced craftsmen
-            with love and care for details.🩷
+            with love and care for details.
             <br />
             <br></br>
             Immerse yourself in a world of tenderness and joy with Plush
-            Paradise!🩷
+            Paradise!
           </p>
         </div>
       </div>
@@ -48,7 +48,7 @@ function About() {
             inimitable products that not only delight the eye, but also give
             warmth and comfort. The hypoallergenic thread used for knitting does
             not contain harmful chemicals and dyes, which makes the toy
-            absolutely safe for everyone 🥰
+            absolutely safe for everyone 
           </p>
         </div>
       </div>
@@ -75,7 +75,7 @@ function About() {
          </p>
          <p className="text-[#f92e9e] flex  justify-center mb-10 text-center text-[30px] ">
            {" "}
-           With love Push Paradise 🥰
+           With love Push Paradise 
          </p>
        </div>
        </div>
