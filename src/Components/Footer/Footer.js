@@ -23,7 +23,8 @@ function Footer() {
       <>
         <Newsletter />
         <div className="container">
-          <div className="flex items-start justify-between p-20 border-b-[2px] border-b-[#f92e9e] ">
+          <div className="flex flex-wrap  items-start justify-around
+            p-20 border-b-[2px] border-b-[#f92e9e] ">
             <div className="flex flex-col flex-wrap p-2 w-[35%]">
               {/* Store information */}
               <div className="logo font-bold text-lg mb-10">
@@ -97,8 +98,8 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col p-2">
-              <h4 className="flex items-start mb-5 text-[25px] text-[#f92e9e] ">
+            <div className="flex flex-col p-2 ">
+              <h4 className="flex items-start mb-5 text-[25px] text-[#f92e9e]  ">
                 Our location
               </h4>
               <iframe

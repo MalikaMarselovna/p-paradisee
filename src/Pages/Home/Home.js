@@ -18,7 +18,7 @@ function Home() {
         Our Cute Toys
       </h2>
       <Products />
-      <div className="cardabout border-[2px] border-[#f92e9e] mt-10 mb-10  bg-[#f92e9e] shadow-lg p-20 rounded-[10px] ">
+      <div className="cardabout border-[2px] border-[#f92e9e] mt-10 mb-10  bg-[#f92e9e] shadow-lg p-20 rounded-[10px] m-3 ">
           <p className="text-2xl text-center text-[#16ffbd] ">
             Our craftsmen put their soul into every detail, creating unique and
             inimitable products that not only delight the eye, but also give

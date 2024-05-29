@@ -30,27 +30,27 @@ function Menu() {
       <div className="container">
       <ul className="flex flex-1 items-center justify-around" role="none">
           <li>
-            <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>
+            <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined} className="smm:text-[12px] mm:text-[16px]">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" aria-current={location.pathname === "/about" ? "page" : undefined}>
+            <Link to="/about" aria-current={location.pathname === "/about" ? "page" : undefined} className="smm:text-[12px] mm:text-[16px]">
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/categorypages" aria-current={location.pathname === "/categorypages" ? "page" : undefined}>
+            <Link to="/categorypages" aria-current={location.pathname === "/categorypages" ? "page" : undefined} className="smm:text-[12px] mm:text-[16px]">
               Our Products
             </Link>
           </li>
           <li>
-            <Link to="/delivery" aria-current={location.pathname === "/delivery" ? "page" : undefined}>
+            <Link to="/delivery" aria-current={location.pathname === "/delivery" ? "page" : undefined} className="smm:text-[12px] mm:text-[16px]">
               Delivery
             </Link>
           </li>
           <li>
-            <Link to="/contacts" aria-current={location.pathname === "/contacts" ? "page" : undefined}>
+            <Link to="/contacts" aria-current={location.pathname === "/contacts" ? "page" : undefined} className="smm:text-[12px] mm:text-[16px]">
               Contact Us
             </Link>
           </li>

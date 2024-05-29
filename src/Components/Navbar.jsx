@@ -17,12 +17,12 @@ function Navbar() {
 
   return (
     <div className="navbar shadow-md relative z-10">
-      <div className="wrapper pt-[10px] pb-[10px] pl-3 pr-3 flex justify-between items-center container lg:pt-2 pb-2">
+      <div className="wrapper pl-3 pr-3 flex justify-between items-center container lg:pt-2 pb-2">
         {/* logo */}
         <div className="center flex-1 text-center">
           <div className="logo">
             <Link to="/">
-              <img src={Logo} alt="logo" className="w-[200px] cursor-pointer mm:w-[150px] smm:h-[30px]" />
+              <img src={Logo} alt="logo" className="w-[200px] cursor-pointer  smm:h-[50px] mm:w-[200px]" />
             </Link>
           </div>
         </div>

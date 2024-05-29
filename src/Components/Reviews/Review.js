@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import "./Review.css";
 import girl from "../../img/girl.jpg";
-import woman from "../../img/rew2.jpg";
+import woman from "../../img/woman2.jpg";
 import man1 from "../../img/rew1.gif";
 import man2 from "../../img/rew4.webp";
 
@@ -71,18 +71,18 @@ function Review() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="resensie_card flex justify-between items-center w-[580px] p-5 mb-5 rounded-[10px] cursor-pointer"
+            className="resensie_card flex justify-between items-center w-[580px] p-5 mb-5 rounded-[10px] cursor-pointer xl:w-[580px] lg:w-[450px] smm:w-[400px] mobile:flex-col w-[300px]"
             style={{ backgroundColor: review.bgColor }}
             onClick={() => openModal(review)}
           >
-            <div className="res_icons w-[40%]">
+            <div className="res_icons w-[40%] mobile:w-[100%]">
               <img
                 src={review.img}
-                className="rounded-[10px] w-[220px] h-[220px] overflow-hidden"
+                className="rounded-[10px] w-[220px] h-[225px] overflow-hidden smm:w-[150px] h-[150px]"
                 alt={review.name}
               />
             </div>
-            <div className="w-[55%]">
+            <div className="w-[55%] modile:w-[100%]">
               <h3 className="res_tit text-white mb-2 text-2xl">
                 {review.name}
               </h3>
