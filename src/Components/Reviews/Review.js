@@ -11,7 +11,7 @@ const reviews = [
     name: "JANE",
     role: "Cosmetologist",
     img: girl,
-    bgColor: "#f92e9e",
+    bgColor: "#fff",
     textColor: "#16ffbd",
     text: `I ordered a knitted toy for my newborn son. The quality is simply amazing!
     The thread is soft, the toy is absolutely safe for the baby. My husband and I are
@@ -21,8 +21,8 @@ const reviews = [
     name: "MARK",
     role: "Restaurant Administrator",
     img: man1,
-    bgColor: "#16ffbd",
-    textColor: "#f92e9e",
+    bgColor: "fff",
+    textColor: "#16ffbd",
     text: `I gave a knitted toy to my niece for her birthday. She immediately fell in love
     with her new bear! Thank you very much for the individual approach and fast delivery.
     I recommend it to everyone!`
@@ -31,8 +31,8 @@ const reviews = [
     name: "KIARA",
     role: "Designer",
     img: woman,
-    bgColor: "#16ffbd",
-    textColor: "#f92e9e",
+    bgColor: "#fff",
+    textColor: "#16ffbd",
     text: `We have several of your toys at home, and they are all just wonderful! I especially
     like that you can order toys with an individual design. It’s very nice to receive such
     high-quality and cute things.`
@@ -41,7 +41,7 @@ const reviews = [
     name: "JOHN",
     role: "Architect",
     img: man2,
-    bgColor: "#f92e9e",
+    bgColor: "#fff",
     textColor: "#16ffbd",
     text: `The toy exceeded all expectations! Ordered as a christening gift and it was a real hit
     with the guests. I really liked the quality and appearance. We will order more.`
@@ -71,25 +71,25 @@ function Review() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="resensie_card flex justify-between items-center w-[580px] p-5 mb-5 rounded-[10px] cursor-pointer xl:w-[580px] lg:w-[450px] smm:w-[400px] mobile:flex-col w-[300px]"
+            className="resensie_card flex justify-between items-center w-[580px] p-5 mb-5 rounded-[10px] cursor-pointer xl:w-[500px] lg:w-[450px] smm:w-[400px] mobile:flex-col w-[300px] border-[1px] border-[#f92e9e]"
             style={{ backgroundColor: review.bgColor }}
             onClick={() => openModal(review)}
           >
-            <div className="res_icons w-[40%] mobile:w-[100%]">
+            <div className="res_icons w-[] mobile:w-[100%]">
               <img
                 src={review.img}
-                className="rounded-[10px] w-[220px] h-[225px] overflow-hidden smm:w-[150px] h-[150px]"
+                className="rounded-[100%]  overflow-hidden smm:w-[150px] h-[150px]"
                 alt={review.name}
               />
             </div>
-            <div className="w-[55%] modile:w-[100%]">
-              <h3 className="res_tit text-white mb-2 text-2xl">
+            <div className="w-[60%] modile:w-[100%]">
+              <h3 className="res_tit text-[#f92e9e] mb-2 text-2xl">
                 {review.name}
               </h3>
               <p className="res_small-txt mb-1 text-xl" style={{ color: review.textColor }}>
                 {review.role}
               </p>
-              <p className="res_txt text-gray-100">
+              <p className="res_txt text-gray-900">
                 {review.text}
               </p>
             </div>

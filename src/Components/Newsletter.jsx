@@ -5,11 +5,11 @@ function Newsletter() {
   return (
     <div className="bg-[#f92e9e]">
       <div className="flex justify-center items-center h-[350px] w-[100%] flex-col container">
-        <h1 className="text-[50px] font-bold text-[#16ffbd]">NEWSLETTER</h1>
-        <h2 className="text-[20px] mt-2 text-white">
-          Always in touch with us, for your favorite products
+        <h1 className="text-[50px] font-bold text-[#16ffbd] mm:text-[40px]">NEWSLETTER</h1>
+        <h2 className="text-[20px] mt-2 text-white smm:text-center ">
+          Always in touch with us, for your favorite products 
         </h2>
-        <form className="flex mt-[2rem] items-center justify-between min-w-[30rem] min-h-[2rem] bg-white border-[#cccccc] rounded-[5px] overflow-hidden">
+        <form className="flex mt-[2rem] items-center justify-between min-w-[30rem] min-h-[2rem] bg-white border-[#cccccc] rounded-[5px] overflow-hidden mmm:min-w-[20rem]">
           <input
             className="border-none pl-[20px] flex-[7] outline-none h-[50px]"
             type="email"

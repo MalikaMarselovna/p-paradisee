@@ -25,7 +25,7 @@ function Footer() {
         <div className="container">
           <div className="flex flex-wrap  items-start justify-around
             p-20 border-b-[2px] border-b-[#f92e9e] ">
-            <div className="flex flex-col flex-wrap p-2 w-[35%]">
+            <div className="flex flex-wrap p-2 w-[35%] ft:w-[100%]">
               {/* Store information */}
               <div className="logo font-bold text-lg mb-10">
                 <img src={Logo} alt="" className="w-[70%] cursor-pointer " />
@@ -39,7 +39,7 @@ function Footer() {
                 laborum dolore totam impedit voluptates. Sunt sapiente vel
                 commodi amet expedita.
               </p>
-              <div className="flex items-center justify-center mt-3 self-start">
+              <div className="flex items-center justify-center mt-3 self-start ft:items-start">
                 <a href="#" className={SocialStyle}>
                   <Facebook className="social" />
                 </a>

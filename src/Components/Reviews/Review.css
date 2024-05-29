@@ -38,5 +38,5 @@
 }
 .resensie_card:hover{
     transform: scale(1.03);
-	box-shadow: 0px 5px 13px 11px rgba(80, 69, 34, 0.2);
+	box-shadow: 0 10px 30px 0 rgb(212, 44, 173);
 } 

@@ -69,6 +69,7 @@
 
   .Search input::placeholder {
     color: rgb(190, 190, 202);
+    
   }
   @media screen and (max-width: 999px) {
     .Search {

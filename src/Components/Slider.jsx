@@ -19,7 +19,7 @@ function Slider() {
   };
 
   return (
-    <div className="parentDiv h-[90vh] bg-white flex items-center justify-between mb-10">
+    <div className="parentDiv h-[550px] bg-white flex items-center justify-between mb-10 ">
       {/* Left arrow */}
       <div className={arrowStyle} onClick={prevSlide}>
         <ArrowLeftOutlined style={{ fontSize: '50px' }} />
@@ -33,7 +33,7 @@ function Slider() {
                 <img className="h-[100%] object-cover" src={slide.src} alt="slide_image" />
               </div>
               <div className="des flex flex-col flex-1 place-items-start justify-center ml-11">
-                <h2 className="text-[55px] mr-[10px]"> {slide.content.h2} </h2>
+                <h2 className="text-[50px] mr-[10px] smm:text-[30px] md:text-[55px] sm:text-[40px] mm:text-[30px]"> {slide.content.h2} </h2>
                 <p className="text-[30px] mb-[20px]">{slide.content.p}</p>
                 <Link to="/categorypages" className="btn">Shop Now</Link>
               </div>

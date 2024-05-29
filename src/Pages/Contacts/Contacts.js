@@ -15,23 +15,23 @@ import {
 function Contact() {
   return (
     <section className="Delivery p-10">
-      <h1 className="text-5xl font-bold mb-20 flex justify-center text-[#f92e9e]">
+      <h1 className="text-5xl font-bold mb-20 flex justify-center text-[#f92e9e] mmm:text-3xl text-center">
         {" "}
         It Is Very Easy To Contact Us
       </h1>
-      <div className="Delivery  flex justify-between mb-20">
-        <div className="Delivery_video mt-15 flex justify-center items-center">
+      <div className="Delivery  flex justify-between mb-20 col:flex-wrap">
+        <div className="Delivery_video mt-15 flex justify-center items-center col:flex-wrap">
           <video
             width="50%"
             height="auto"
             controls
             autoPlay
             muted
-            className=" shadow-2xl rounded-lg border-[#c0c0c0] border-none "
+            className=" shadow-2xl rounded-lg border-[#c0c0c0] border-none   xl col:w-[100%]"
           >
             <source src={video} type="video/mp4" />
           </video>
-          <div className="info-text  p-5 flex flex-col justify-center items-center text-center">
+          <div className="info-text col:w-[100%] p-5 flex flex-col justify-center items-center text-center">
             <p className="text-[33px] mb-4">
               Just call, write, or come to our office.
             </p>

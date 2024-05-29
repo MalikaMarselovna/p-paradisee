@@ -8,12 +8,12 @@ function About() {
   return (
     <>
     <section className="Delivery p-10">
-      <h1 className="text-5xl font-bold mb-20 flex justify-center text-[#f92e9e]">
+      <h1 className="text-5xl font-bold mb-20 flex justify-center text-[#f92e9e]  mmm:text-3xl text-center">
         {" "}
         Welcome to Plush Paradise!
       </h1>
-      <div className="flex justify-between items-center mb-20">
-        <div className="flex w-[50%]">
+      <div className="flex justify-between items-center mb-20 col:flex-wrap">
+        <div className="flex w-[50%] col:w-[100%] col:flex-wrap">
           {" "}
           <video
             width="100%"
@@ -21,12 +21,12 @@ function About() {
             controls
             autoPlay
             muted
-            className=" shadow-2xl rounded-lg border-[#c0c0c0] border-none "
+            className=" shadow-2xl rounded-lg border-[#c0c0c0] border-none mb-10 "
           >
             <source src={video} type="video/mp4" />
           </video>
         </div>
-        <div className="w-[45%] flex items-center">
+        <div className="w-[45%] flex items-center col:w-[100%]">
           <p className="text-gray-800 flex  justify-center mb-4 text-center text-[20px] ">
             In our store you will find the softest and cutest plush knitted toys
             for you and your loved ones.
@@ -40,8 +40,6 @@ function About() {
           </p>
         </div>
       </div>
-
-ч
       <div className="justify-between items-center mt-20">
         <h4 className=" text-[#f92e9e] text-center text-3xl">
           You Ask, We Answer
