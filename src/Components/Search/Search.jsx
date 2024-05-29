@@ -54,12 +54,12 @@ export default function Search() {
     <div className="Search">
       <div className="left flex flex-1 items-center">
         <div
-          className="searchInput flex border-[2px] border-solid border-[#f92e9e] rounded-[5px] items-center ml-[10px] p-[5px] transition-all"
+          className="searchInput flex border-[2px] border-solid border-[#f92e9e] rounded-[5px] items-center  p-[5px] transition-all"
           ref={searchRef}
         >
           <input
             type="text"
-            className="input outline-none text-center w-[430px]"
+            className="input outline-none text-center w-[430px] mobile:w-[100px] md:w-[300px] sm:w-[250px] mm:w-[200px] smm:w-[100px]"
             placeholder="What do you want?"
             value={searchTerm}
             onChange={handleSearch}
