@@ -20,7 +20,7 @@ export default function Category() {
   }
 
   return (
-    <div className="Category ">
+    <div className="Category flex flex-wrap ">
       <CategoryList></CategoryList>
       <h2 className="title text-center font-bold text-[40px] text-[#f92e9e] ">{category.name}</h2>
       <ProductList  category={category} />
