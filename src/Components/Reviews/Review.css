@@ -1,4 +1,4 @@
-.resensie_card {
+/* .resensie_card {
 	background: #f5f5f5;
 	width: calc(100% / 3.5);
 	display: flex;
@@ -22,59 +22,6 @@
 	margin-bottom: 30px;
 }
 
-/* .res_icon{
-	width: 100px;
-	height: 100px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-
-} */
-.icon_res1 {
-	background-image: url(../../img/photo.jpg);
-	width: 150px;
-	height: 150px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 100%;
-	overflow: hidden;
-	margin-bottom: 20px;
-	margin-top: -90px;
-}
-
-.icon_res2 {
-	background-image: url(../../img/family.jpeg);
-	width: 150px;
-	height: 150px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 100%;
-	overflow: hidden;
-	margin-bottom: 20px;
-	margin-top: -90px;
-}
-
-.icon_res3 {
-	background-image: url(../../img/girl.jpg);
-	width: 150px;
-	height: 150px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 100%;
-	overflow: hidden;
-	margin-bottom: 20px;
-	margin-top: -90px;
-}
-
 .sec_tit {
 	border-bottom: 2px solid #ce5a0e;
 	width: 50%;
@@ -84,11 +31,12 @@
 
 }
 
-.advan_card:hover,
-.resensie_card:hover,
-.med:hover
-{
-	-webkit-box-shadow: 0px 5px 13px 11px rgba(80, 69, 34, 0.2);
-	-moz-box-shadow: 0px 5px 13px 11px rgba(80, 69, 34, 0.2);
-	box-shadow: 0px 5px 13px 11px rgba(80, 69, 34, 0.2);
+*/
+.resensie_card{
+    transition: 0.5s;
+    cursor: pointer;
 }
+.resensie_card:hover{
+    transform: scale(1.03);
+	box-shadow: 0px 5px 13px 11px rgba(80, 69, 34, 0.2);
+} 

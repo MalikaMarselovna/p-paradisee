@@ -66,24 +66,7 @@ body{
 }
 body::-webkit-scrollbar {
 	display: none;
-  }
-.dn{
-	display: none;
-}
-
-.color{
-	color: #BE963F;
-}
- .dib{
-	display: inline-block;
-}
-
-.img_wrap{
-	overflow: hidden;
-	border-radius: 5px;
-}  
-
-
+  } 
 
 @tailwind base;
 @tailwind components;
@@ -100,7 +83,7 @@ body::-webkit-scrollbar {
 	width: 100%;
 	min-width: 320px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 5 15px;
 }
 .card,
 a,
