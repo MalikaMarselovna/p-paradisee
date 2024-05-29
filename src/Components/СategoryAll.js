@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { AppContext } from "../App";
-import ProductList from "./ProductList/ProductList";
+import ProductList from "./ProductList/ProductList"; // Ensure correct import
 
 export default function CategoryAll() {
   const { products } = useContext(AppContext);
@@ -16,15 +16,9 @@ export default function CategoryAll() {
   return (
     <div className="CategoryAll container">
       <h2 className="text-3xl font-bold mb-5">All Products</h2>
-      <div className="flex flex-wrap">
-        {products.map(product => 
-          product && product.id ? ( // Ensure product and product.id are defined
-            <ProductItemList key={product.id} product={product} />
-          ) : (
-            console.warn('Invalid product:', product) // Log invalid products
-          )
-        )}
-      </div>
+      <ProductList products={products} />
     </div>
   );
 }
+
+

@@ -41,17 +41,7 @@ function About() {
         </div>
       </div>
 
-      <div>
-        <div className="cardabout border-[2px] border-[#f92e9e]  bg-[#f92e9e] shadow-lg p-20 rounded-[10px] ">
-          <p className="text-2xl text-center text-[#16ffbd] ">
-            Our craftsmen put their soul into every detail, creating unique and
-            inimitable products that not only delight the eye, but also give
-            warmth and comfort. The hypoallergenic thread used for knitting does
-            not contain harmful chemicals and dyes, which makes the toy
-            absolutely safe for everyone 
-          </p>
-        </div>
-      </div>
+ч
       <div className="justify-between items-center mt-20">
         <h4 className=" text-[#f92e9e] text-center text-3xl">
           You Ask, We Answer

@@ -19,7 +19,7 @@ import ThankYou from "./Pages/ThankYou/ThankYou";
 import Orders from "./Pages/Orders/Orders";
 import CategoryPages from "./Pages/CategoryPages";
 import CategoryList from "./Components/CategoryList/CategoryList"
-import CategoryAll from "./Components/СategoryAll"
+
 
 export const AppContext = createContext({
   categories: [],
@@ -75,7 +75,7 @@ function App() {
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/categorypages" element={<CategoryPages />} />
-            <Route path="/categories/all" element={<CategoryAll />} />
+           
             <Route path="/categories/:slug" element={<CategoryList />} />
 
             <Route path="*" element={<NotFound />} />

@@ -16,7 +16,6 @@ export default function OrderForm({ active, setActive }) {
     return "(Please log in)";
   }
 
-
   function onFormSubmit(event) {
     event.preventDefault();
 
@@ -27,6 +26,7 @@ export default function OrderForm({ active, setActive }) {
       phone: formData.get('phone'),
       user: user.uid,
       address: formData.get('address'),
+      checkout: formData.get('checkout'),
       cart: cart,
     })
       .then(doc => {
@@ -34,7 +34,6 @@ export default function OrderForm({ active, setActive }) {
         navigate("/thank-you");
       })
   }
-
 
   return (
     <div className={active ? "OrderForm active" : "OrderForm"} onClick={() => setActive(false)}>
@@ -45,17 +44,20 @@ export default function OrderForm({ active, setActive }) {
               <input className="focus-within:border-[#f92e9e] outline-none" type="text" name="name" placeholder="Name" required />
             </label>
             <label>
-              <input className="focus-within:border-[#f92e9e] outline-none"  type="tel" name="phone" placeholder="Phone" required />
+              <input className="focus-within:border-[#f92e9e] outline-none" type="tel" name="phone" placeholder="Phone" required />
             </label>
             <label>
-              <input className="focus-within:border-[#f92e9e] outline-none"  type="text" name="address" placeholder="Country, city, street" required />
+              <input className="focus-within:border-[#f92e9e] outline-none" type="text" name="address" placeholder="Country, city, street" required />
+            </label>
+            <label>
+              <textarea className="focus-within:border-[#f92e9e] outline-none" name="checkout" placeholder="Checkout notes" rows="4"></textarea>
             </label>
             <div>
-              <button  type="submit" className="btn">Order</button>
+              <button type="submit" className="btn">Order</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-  )
+  );
 }

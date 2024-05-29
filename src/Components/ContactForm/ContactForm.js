@@ -47,25 +47,25 @@ function ContactForm() {
       onSubmit={handleSubmit}
     >
       <h2 className="text-3xl mb-4 flex text-[#f92e9e]">Contact Us</h2>
-      <input
+      <input 
         type="text"
         name="name"
-        className="mb-5 mt-10 p-3 outline-[#f92e9e]"
+        className="mb-5 mt-10 p-3 outline-[#f92e9e] focus-within:border-[#f92e9e] outline-none rounded-lg"
         placeholder="Your Name"
         value={formData.name}
         onChange={handleInputChange}
       />
-      <input
+      <input 
         type="email"
         name="email"
-        className="mb-5 p-3 outline-[#f92e9e]"
+        className="mb-5 p-3 outline-[#f92e9e] focus-within:border-[#f92e9e] outline-none rounded-lg"
         placeholder="Your Email"
         value={formData.email}
         onChange={handleInputChange}
       />
       <textarea
         name="message"
-        className="mb-7 p-5 outline-[#f92e9e]"
+        className="mb-20 p-5 outline-[#f92e9e] focus-within:border-[#f92e9e] outline-none rounded-lg "
         placeholder="Your Message"
         value={formData.message}
         onChange={handleInputChange}

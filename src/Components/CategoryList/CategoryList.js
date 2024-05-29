@@ -10,28 +10,19 @@ export default function CategoryList() {
 
   const output = categories.map((category) => (
     <li key={category.id}>
-      <NavLink to={"/categories/" + category.slug}>
+      <NavLink to={"/categories/" + category.slug} >
         {category.name}
       </NavLink>
+
       <DeleteCategory category={category} />
     </li>
-  ));
+  ))
 
   return (
-    <div className="CategoryList container">
-      <button className="dropdownBtn">
-        <p><strong>Categories</strong></p>
-        <i className="fa-solid fa-chevron-down fa-xs"></i>
-      </button>
-      <ul className="dropdownContent">
-        <li>
-          <NavLink to="/categories/all">
-            Categories All
-          </NavLink>
-        </li>
-        {output}
-        <AddCategory />
+    <div className="CategoryList ">
+      <ul className="dropdownContent text-[#f92e9e]">{output}
+      <AddCategory />
       </ul>
     </div>
-  );
+  )
 }
