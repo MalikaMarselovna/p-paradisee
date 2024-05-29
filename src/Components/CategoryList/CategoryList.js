@@ -17,10 +17,10 @@ export default function CategoryList() {
       <DeleteCategory category={category} />
     </li>
   ))
-
+ 
   return (
     <div className="CategoryList ">
-      <ul className="dropdownContent text-[#f92e9e]">{output}
+      <ul className="dropdownContent text-[#f92e9e] flex ft:flex-col text-center">{output}
       <AddCategory />
       </ul>
     </div>
